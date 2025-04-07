@@ -1,5 +1,5 @@
-% Insert name here
-% Insert email address here
+% Yufan Yan
+% ssyyy17@nottingham.edu.cn
 
 
 %% PRELIMINARY TASK - ARDUINO AND GIT INSTALLATION [10 MARKS]
