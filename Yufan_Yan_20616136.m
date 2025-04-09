@@ -91,8 +91,10 @@ fclose(fileID);  % Close the file
 
 
 %% TASK 2 - LED TEMPERATURE MONITORING DEVICE IMPLEMENTATION [25 MARKS]
-
-% Insert answers here
+clear
+doc temp_monitor
+a = arduino('COM3', 'Uno'); 
+temp_monitor(a);
 
 
 %% TASK 3 - ALGORITHMS – TEMPERATURE PREDICTION [25 MARKS]
