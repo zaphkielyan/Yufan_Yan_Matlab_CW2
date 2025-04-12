@@ -106,4 +106,40 @@ temp_prediction(a);
 
 %% TASK 4 - REFLECTIVE STATEMENT [5 MARKS]
 
-% Insert answers here
+% This project provided a valuable opportunity to apply real-time data acquisition 
+% and control principles using MATLAB and Arduino. The core challenge lay in integrating 
+% multiple hardware components—temperature sensor (MCP9700A), LEDs, and a live plotting 
+% system—into a coherent, responsive monitoring system. Initially, the LED behavior was 
+% inconsistent due to subtle hardware issues, such as incorrect polarity and missing resistors. 
+% Once identified and corrected, this highlighted the importance of thoroughly validating 
+% physical connections before debugging code.
+
+% Another significant challenge was dealing with noisy analog signals. When LEDs were 
+% introduced to the system, their switching caused interference that distorted temperature 
+% readings. This issue underscored how even small hardware additions can influence analog 
+% measurements. It was resolved through both hardware (three resistors in parallel) to the 
+% VOUT and GND, demonstrating the strength of a hybrid approach to noise reduction.
+
+% A major strength of the system is its modularity. Each task—basic reading, real-time display, 
+% LED feedback, and predictive modeling—was built incrementally and tested independently. This 
+% not only improved reliability but made troubleshooting more manageable. The final 
+% temp_prediction.m function successfully provided intuitive visual feedback and prediction 
+% features, giving it practical value for proactive temperature management.
+
+% However, the system also has limitations. The assumption of a constant temperature change 
+% rate for future prediction is simplistic and could become inaccurate in fluctuating 
+% environments. Additionally, the infinite loop structure means that the system must be 
+% manually terminated, which is less ideal for long-term use or deployment.
+
+% For future improvements, introducing a more intelligent prediction model, such as polynomial 
+% regression or machine learning-based trend forecasting, could greatly enhance reliability. 
+% Incorporating hysteresis or debounce logic for LED switching could also reduce false alerts 
+% due to transient fluctuations. A user-friendly interface, perhaps built using MATLAB App 
+% Designer, would allow parameter tuning (e.g., thresholds, prediction horizon) without 
+% modifying the code. Finally, logging data to a cloud platform or SD card would make 
+% long-term monitoring feasible.
+
+% Overall, this project effectively demonstrated the integration of sensor data processing, 
+% real-time visualization, and hardware control. The experience enhanced both technical and 
+% system-level problem-solving skills, laying a strong foundation for more advanced embedded 
+% and predictive systems in the future.
