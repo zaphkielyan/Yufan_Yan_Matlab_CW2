@@ -98,8 +98,10 @@ temp_monitor(a);
 
 
 %% TASK 3 - ALGORITHMS – TEMPERATURE PREDICTION [25 MARKS]
-
-% Insert answers here
+clear
+doc temp_prediction
+a = arduino('COM3', 'Uno');
+temp_prediction(a);
 
 
 %% TASK 4 - REFLECTIVE STATEMENT [5 MARKS]
